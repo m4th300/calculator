@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono&family=Montserrat:wght@500&family=Rubik:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Chivo Mono', monospace;
+    font-weight: 600;
+    font-size: 1.3rem;
+    list-style:  none;
+    text-decoration: none;
+    border: none;
+}
+
+body {
+    overflow: hidden;
+    background: #e0dfde;
+}
+
+.container {
+    width: 450px;
+    height: 560px;
+    margin: 30px auto;
+    padding: 1rem 2rem;
+    box-shadow: 0px 10px 2px 6px rgba(0, 0, 0, 0.51);
+    border-radius: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #FFFDFA;
+}
+
+.result-container {
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+    position: relative;
+    background: #D3D3D3;
+    border-radius: 10px 10px 10px 35px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, 
+                rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, 
+                rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    text-align: right;
+}
+
+.result {
+    font-size: 1.5rem;
+}
+
+.buttons-container {
+    width: 100%;
+    height: 410px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.basique-buttons-container {
+    height: 100%;
+    width: 330px;
+    margin-top: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 70px);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(70px, auto);
+}
+
+.btn {
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, 
+                rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, 
+                rgba(0, 0, 0, 0.2) 0px -3px 0px inset,
+                rgba(50, 50, 93, 0.25) 0px 10px 30px -12px inset, 
+                rgba(0, 0, 0, 0.3) 0px -10px 30px -12px inset;
+    transition: .4s ease;
+}
+
+.btn:hover {
+    filter: brightness(0.9);
+}
+.pressed {
+    background: #b1ebfb;
+}
+
+.btn-AC {
+    grid-column: 1;
+    grid-row: 1;
+    background: #ffcb46;
+}
+
+.btn-sign {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.btn-percent {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.btn-division {
+    grid-column: 4;
+    grid-row: 1;
+    width: 70px
+}
+.btn-multiplication {
+    grid-column: 4;
+    grid-row: 2;
+}
+
+.btn-minus {
+    grid-column: 4;
+    grid-row: 3;
+}
+
+.btn-7 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.btn-8 {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.btn-9 {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.btn-plus {
+    grid-column: 4;
+    grid-row: 4;
+    height: 70px;
+}
+
+.btn-4 {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.btn-5 {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.btn-6 {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+.btn-1 {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+.btn-2 {
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.btn-3 {
+    grid-column: 3;
+    grid-row: 4;
+}
+
+.btn-0 {
+    grid-column: 1 / 2;
+    grid-row: 5;
+    width: 150px;
+}
+
+.btn-equal {
+    grid-column: 4;
+    grid-row: 5;
+}
+
+.btn-comma {
+    grid-column: 3;
+    grid-row: 5;
+}
+
+.btn-number {
+    background: white;
+}
